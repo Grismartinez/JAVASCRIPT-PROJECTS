@@ -1,10 +1,9 @@
 // Create the variables
-let Sent1 = "This is the beginning of the string";
-let Sent2 = " and this is the end of the string";
+let Sent1 = "Student";
+let Sent2 = " Yes, I am a student.";
 
 // Concatenate using the += operator
 Sent1 += Sent2;  // Sent1 now contains both strings
-
 // Write an expression using alert
 alert(Sent1);
 
