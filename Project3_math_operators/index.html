@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtraction Operation</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <script>
+    function subtractions_Fuction() {
+        var subtraction = 5 - 2;
+        document.getElementById("Math").innerHTML = "5 - 2 = " + subtraction;
+    }
+    </script>
+    <p id="Math">Click the button to see a subtraction operation.</p>
+    <button onclick="subtractions_Fuction()">Click Me!</button>
+    <script>
+    function multiplications_Fuction() {
+        var multiplication = 5 * 2;
+        document.getElementById("Math1").innerHTML = "5 * 2 = " + multiplication;
+    }
+    </script>
+    <p id="Math1">Click the button to see a multiplication operation.</p>
+    <button onclick="multiplications_Fuction()">Click Me!</button>
+    <script>
+    function increment() {
+        var X = 5;
+        X++;
+        document.getElementById("Math2").innerHTML = "5 incremented by 1 is: " + X;
+    }
+    function decrement() {
+        var Y = 5.25;
+        Y--;
+        document.getElementById("Math3").innerHTML = "5.25 decremented by 1 is: " + Y;
+    }
+    </script>
+    <p id="Math2">Click the button to see an increment operation.</p>
+    <button onclick="increment()">Click Me!</button>
+    <script>
+    </script>
+    <p id="Math3">Click the button to see a decrement operation.</p>
+    <button onclick="decrement()">Click Me!</button>
+    fuction random_number() {
+        var R = Math.random() * 100;
+        document.getElementById("Math4").innerHTML = "A random number between 0 and 100: " + R;
+    }
+    </script>
+    <p id="Math4">Click the button to see a random number.</p>
+    <button onclick="random_number()">Click Me!</button>
+</body>
+</html>
