@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dictionaries</title>
+    <title>Directory</title>
 </head>
 <body>
-  <script>
-    function my_Dictionary() {
+    <script src="main.js"></script>
+    <button onclick="my_Directory()">Show Directory</button>
+    <script>
+      function my_Directory() {
         var Animal = {
             Species: "Dog",
             Color: "Brown",
@@ -15,12 +17,12 @@
             Age: 5,
             Sound: "Bark!"
         };
-        document.getElementById("Dictionary").innerHTML = "The " + Animal.Breed + " says " + Animal.Sound;
+        document.getElementById("Directory").innerHTML = "The " + Animal.Breed + " says " + Animal.Sound;
     }  
     function delete_Property() 
         {
             delete Animal.Sound;
-            document.getElementById("Dictionary").innerHTML = Animal.Sound;
+            document.getElementById("Directory").innerHTML = Animal.Sound;
     }
     </script>     
 </body>
