@@ -1,14 +1,17 @@
+// Ternary operator to check ride eligibility
 function rideFunction() {
     var height = document.getElementById("height").value;
     var canRide = (height >= 52) ? "You are tall enough to ride." : "You are not tall enough to ride.";
     document.getElementById("ride").innerHTML = canRide;
 }
+// Constructor for Vehicle objects
 function Vehicle(make, model, year, color) {
     this.vehicle_make = make;
     this.vehicle_model = model;
     this.vehicle_year = year;
     this.vehicle_color = color;
 }
+// Creating instances of Vehicle
 var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
 var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
 var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
@@ -17,6 +20,7 @@ function myFunction() {
     "Erik drives a " + Erik.vehicle_color + "-colored " + Erik.vehicle_model +
     " manufactured in " + Erik.vehicle_year;
 }
+// Nested function example
 function count_Function() {
     document.getElementById("Counting").innerHTML = Count();
     function Count() {
@@ -26,6 +30,7 @@ function count_Function() {
         return Starting_point;
     }
 }
+// Another nested function example
 function nestedFunction() {
     document.getElementById("Nested_Function").innerHTML = nest();
     function nest() {
