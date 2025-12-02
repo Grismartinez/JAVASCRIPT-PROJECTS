@@ -9,6 +9,7 @@ function showInfinity() {
 function showNegativeInfinity() {
     let tinyNumber = -1e309;  // Smaller (more negative) than the minimum number
     document.getElementById("negInf").textContent = "Negative Infinity: " + tinyNumber;
+    document.getElementById("posInf").textContent = "Positive Infinity: " + hugeNumber;
 }
 // Function to demonstrate Boolean logic
 function showBooleanResults() {
@@ -29,6 +30,9 @@ function showBooleanResults() {
         "Is 10 less than 5? " + isLess;
 }
 
+function comparisons(a, b) {
+    return a == b;
+}
 // Call the functions to display results
 showInfinity();
 showNegativeInfinity();
@@ -59,8 +63,14 @@ let isEqual = (x == y);   // true
 let isNotEqual = (x == z); // false
 
 // Display results in the console
-console.log("Does 10 == '10'? → " + isEqual);      // true
-console.log("Does 10 == 15? → " + isNotEqual);     // false
+function showEquality() {
+   document.getElementById("equalResult").innerHTML =
+   "The equality operator (10 == '10') returns: " + isEqual;
+}
+function showInequality() {
+   document.getElementById("notEqualResult").innerHTML =
+   "The equality operator (10 == 15) returns: " + isNotEqual;
+}
 
 // === compares both VALUE and DATA TYPE
 
@@ -81,22 +91,30 @@ let falseResult3 = (50 === 100); // false (both numbers but not equal)
 
 
 // Display results in console
-console.log("True result (10 === 10):", trueResult);
-console.log("False result #1 ('20' === 30):", falseResult1);
-console.log("False result #2 (10 === '10'):", falseResult2);
-console.log("False result #3 (50 === 100):", falseResult3);
+function showStrictEquality() {
+   document.getElementById("trueResult").innerHTML =
+   "The strict equality operator (10 === 10) returns: " + trueResult;
+}   
+function showFalseStrictEquality2() {
+   document.getElementById("falseResult").innerHTML =
+   "The strict equality operator (\"20\" === 30) returns: " + falseResult1;
+}
 
 // AND Operator (&&)
 // Returns true ONLY when both conditions are true
 let andTrue = (10 > 5 && 8 < 20);     // true && true → true
 let andFalse = (10 > 5 && 8 > 20);    // true && false → false
 
-console.log("AND True Result (10 > 5 && 8 < 20):", andTrue);
-console.log("AND False Result (10 > 5 && 8 > 20):", andFalse);
+function showLogicResults() {
+   document.getElementById("andResult").innerHTML =
+   "The AND operator applied to (10 > 5 && 8 < 20) is: " + andTrue + "<br>" +
+   "The AND operator applied to (10 > 5 && 8 > 20) is: " + andFalse;
+}
+
 
 //NOT Operator
 // Returns false ONLY 
-function not_Function() {
+function showNotResults() {
    document.getElementById("notResult").innerHTML =
    "The NOT operator applied to (10 > 5) is: " + !(10 > 5) + "<br>" +
    "The NOT operator applied to (5 > 10) is: " + !(5 > 10);
