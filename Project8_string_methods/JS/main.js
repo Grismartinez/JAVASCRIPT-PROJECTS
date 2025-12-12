@@ -1,3 +1,8 @@
+function Concatenate_Method() {
+    var Part1 = "I am learning ";
+    var Part2 = "JavaScript string methods.";
+    document.getElementById("Concatenate").innerHTML = Part1.concat(Part2);   
+}
 function Slice_Method() {
     var Sentence = "I am learning JavaScript!";
     var Section = Sentence.slice(5, 12);
