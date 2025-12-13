@@ -1,17 +1,17 @@
 var X = 10;
 function Add_numbers_1() {
-    Document.write(20 + X + "<br>");
+    document.write(20 + X + "<br>");
 }   
 function Add_numbers_2() {
-    Document.write(X + 100);
+    document.write(X + 100);
 }  
 function get_Date() {
     if (new Date().getHours() < 18) {
-        Document.getElementById("Greeting").innerHTML = "How are you today?";
+        document.getElementById("Greeting").innerHTML = "How are you today?";
     }  
 } 
 function Age_Function() {
-    Age = Document.getElementById("age").value;
+    Age = document.getElementById("age").value;
     if (Age >= 18) {
         Vote = "You are old enough to vote!";
     } else {
@@ -32,4 +32,7 @@ function Time_function() {
         Reply = "It is evening time.";
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
+
+    console.log(Reply); 
+    
 }
