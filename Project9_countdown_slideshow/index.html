@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project9_countdown_slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>How many seconds would you like to set your alarm for?</p>
+    <input type="number" id="seconds" />
+    <button onclick="countdown()">Click Here</button>
+    <p id="timer"></p>
+
+    <script src="main.js"></script>
+    <script>
+        function setAlarm() {
+            var seconds = document.getElementById("secondsInput").value;
+            setTimeout(function() {
+                alert("Alarm ringing!");
+            }, seconds * 1000);
+        }
+    </script>
+    <!--Slideshow container-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <br>
+        <!--The dots/circles-->     
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+</body>
+</html>
