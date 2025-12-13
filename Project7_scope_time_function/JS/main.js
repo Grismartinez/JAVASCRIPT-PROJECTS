@@ -1,17 +1,17 @@
 var X = 10;
 function Add_numbers_1() {
-    document.write(20 + X + "<br>");
+    Document.write(20 + X + "<br>");
 }   
 function Add_numbers_2() {
-    document.write(X + 100);
+    Document.write(X + 100);
 }  
 function get_Date() {
     if (new Date().getHours() < 18) {
-        document.getElementById("Greeting").innerHTML = "How are you today?";
+        Document.getElementById("Greeting").innerHTML = "How are you today?";
     }  
 } 
 function Age_Function() {
-    Age = document.getElementById("age").value;
+    Age = Document.getElementById("age").value;
     if (Age >= 18) {
         Vote = "You are old enough to vote!";
     } else {
@@ -22,10 +22,10 @@ function Age_Function() {
 function Time_function() {
     var Time = new Date().getHours();
     var Reply;
-    if (Time < 12 == Time > 0) {
+    if (Time < 12 && Time > 0) {
         Reply = "It is morning time!";
     }   
-    else if (Time >= 12 == Time < 18) {
+    else if (Time >= 12 && Time < 18) {
         Reply = "It is afternoon.";
     }
     else {
