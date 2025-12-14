@@ -13,21 +13,29 @@ function countdown() {
         }
     }
     tick();
-    // Slideshow part
-    var images = [
-        "https://www.example.com/image1.jpg",
-        "https://www.example.com/image2.jpg",
-        "https://www.example.com/image3.jpg"
-    ];
-    // Initialize index for slideshow
-    var index = 0;  
-    function changeImage() {
-        document.getElementById("slideshow").src = images[index];
-        index++;
-        if (index >= images.length) {
-            index = 0;
+        // Slideshow part
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dot = document.getElementsByClassName("dot");  
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
         }
-        setTimeout(changeImage, 2000);
+        var images = [
+            "https://www.example.com/image1.jpg",
+            "https://www.example.com/image2.jpg",
+            "https://www.example.com/image3.jpg"
+        ];
+        // Initialize index for slideshow
+        var index = 0;  
+        function changeImage() {
+            document.getElementById("slideshow").src = images[index];
+            index++;
+            if (index >= images.length) {
+                index = 0;
+            }
+            setTimeout(changeImage, 2000);
+        }
+        changeImage();
     }
-    changeImage();
-}
