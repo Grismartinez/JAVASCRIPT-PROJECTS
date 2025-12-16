@@ -1,41 +1,54 @@
 // Countdown Timer and Slideshow Function
+
+// Slideshow state and initial display
+let slideIndex = 1;
+showSlides(slideIndex);
+
 function countdown() {
-    var seconds = document.getElementById("seconds").value;
-    var timer = document.getElementById("timer");
+    let seconds = parseInt(document.getElementById("seconds").value, 10) || 0;
     function tick() {
-        seconds = seconds - 1;
-        timer.innerHTML = seconds;
-        var time = setTimeout(tick, 1000);
-        if (seconds == -1) {
-            alert("time's up!");
-            clearTimeout(time);
-            timer.innerHTML = "";
+        seconds--;
+        document.getElementById("timer").innerHTML = seconds;
+        
+        if (seconds > 0) {
+            setTimeout(tick, 1000);
+        } else {
+            document.getElementById("timer").innerHTML = "Time's up!";
         }
     }
     tick();
-        // Slideshow part
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dot = document.getElementsByClassName("dot");  
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-        }
-        var images = [
-            "https://www.example.com/image1.jpg",
-            "https://www.example.com/image2.jpg",
-            "https://www.example.com/image3.jpg"
-        ];
-        // Initialize index for slideshow
-        var index = 0;  
-        function changeImage() {
-            document.getElementById("slideshow").src = images[index];
-            index++;
-            if (index >= images.length) {
-                index = 0;
-            }
-            setTimeout(changeImage, 2000);
-        }
-        changeImage();
+}
+
+// NEXT / previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Dot controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    if (slides.length === 0) return;
+
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    if (dots[slideIndex - 1]) {
+        dots[slideIndex - 1].className += " active";
+    }
+}
