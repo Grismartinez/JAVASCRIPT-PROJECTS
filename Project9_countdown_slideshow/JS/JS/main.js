@@ -1,6 +1,7 @@
 // Countdown Timer and Slideshow Function
 
 // Slideshow state and initial display
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
