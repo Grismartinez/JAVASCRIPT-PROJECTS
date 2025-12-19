@@ -8,21 +8,15 @@
 </head>
 <body>
     
-    <input type="number" id="seconds" />
+    <input type="number" id="seconds"/>
     <button onclick="countdown()">Click Here</button>
     <p id="timer"></p>
 
     <script src="JS/JS/main.js"></script>
-    <script>
-        function setAlarm() {
-            var seconds = document.getElementById("secondsInput").value;
-            setTimeout(function() {
-                alert("Alarm ringing!");
-            }, seconds * 1000);
-        }
-    </script>
+  
     <!--Slideshow container-->
     <div class="slideshow-container">
+   
         <div class="mySlides fade">
             <img src="img1.jpg" style="width:100%">
             <div class="text">Car 1</div>
@@ -34,14 +28,23 @@
         <div class="mySlides fade">
             <img src="img3.jpg" style="width:100%">
             <div class="text">Car 3</div>
-            <!--Next and Previous Buttons-->
+         
+        <!--Next and Previous Buttons-->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
         </div>
         <br>
         
-    </div>
     <div style="text-align:center">
+          <script>
+        function setAlarm() {
+            var seconds = document.getElementById("secondsInput").value;
+            setTimeout(function() {
+                alert("Alarm ringing!");
+            }, seconds * 1000);
+        }
+    </script>
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span>    
