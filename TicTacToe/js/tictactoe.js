@@ -13,14 +13,15 @@ function placeXOrO(squareNumber) {
     //to see if it includes the square number clicked on.
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
     //This variable retrieves the HTML element id that was clicked.    
-        let square = document.getElementById(squareNumber);
+        let Select = document.getElementById(squareNumber);
         if (activePlayer === 'X') {
             //If active player is X, the x.png is placed in HTML.
-            selectedSquares.style.backgroundImage = 'url("images/x.png")';
+            Selectelect.style.backgroundImage = 'url("TicTacToe\images\A.png")';
         } else {
-            select.style.backgroundImage = 'url("images/o.png")';
+            Select.style.backgroundImage = 'url("TicTacToe\images\B.png")';
         }
-        selectedSquares.push(squareNumber + activePlayer);
+        //squareNumber and activePlayer are concatenated together and added to the array.
+        SelectedSquares.push(squareNumber + activePlayer);
         checkWinConditions();
         //This condition checks to see if it is the computer's turn.
         if (activePlayer === 'X') {
