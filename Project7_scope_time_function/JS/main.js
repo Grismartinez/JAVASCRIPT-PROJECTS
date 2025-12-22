@@ -1,11 +1,9 @@
 
-// Global variable
-var X = 10;
-function Add_numbers_1() {
-    document.write(20 + X + "<br>");
-}  
+
+
 // Global variable 
-function Add_numbers_2() {
+var X = 10;
+function Time_of_day() {
     document.write(X + 100);
 }  
 // Date function
