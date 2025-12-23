@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Tic Tac Toe Today!</title>
-     <link rel="stylesheet" href="CSS/game.css">
+     
+    <link rel="stylesheet" href="CSS/game.css">
      
 </head>
 <body id="body">
-
-     <script src="js/tictactoe.js"></script>
+ 
+    
    
     <h1>Let's Play Tic Tac Toe!</h1>
     <!--This container is needed to overlay our canvas over out table-->
-    <div id="game-container">
+    <div id="game-container">   
+
+    
+  
         <!--NOTE: Canvas with and height must be within the element.-->
         <canvas id="win-lines" width="608" height="608"></canvas>
         <table id="gameTable">
+            
+        <img id="background-image" src="Images/A.png" alt="Background Image">
+        <img id="board-image" src="Images/B.png" alt="Game Board Image">
+            
             <tr>
                 <td id="0" onclick="placeXOrO('0')"></td>
                 <td id="1" onclick="placeXOrO('1')"></td>
@@ -32,9 +40,11 @@
                 <td id="7" onclick="placeXOrO('7')"></td>
                 <td id="8" onclick="placeXOrO('8')"></td>
             </tr>
+        
         </table>
+      
     </div>
-
+<script src="js/tictactoe.js"></script>
    
 </body>
 </html>
