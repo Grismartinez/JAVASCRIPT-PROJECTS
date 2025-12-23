@@ -30,6 +30,13 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+function setAlarm() {
+            var seconds = document.getElementById("secondsInput").value;
+            setTimeout(function() {
+                alert("Alarm ringing!");
+            }, seconds * 1000);
+        }
+
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
