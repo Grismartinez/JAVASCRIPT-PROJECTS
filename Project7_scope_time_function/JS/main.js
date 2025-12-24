@@ -23,7 +23,7 @@ function Age_Function() {
     document.getElementById("How_old_are_you").innerHTML = Vote;
 }
 /* FUNCTION WITH AN INTENTIONAL ERROR */
-        function buggyFunction() {
+        function Buggy_Function() {
             let value = 20;
 
 // Intentional error: wrong variable name
