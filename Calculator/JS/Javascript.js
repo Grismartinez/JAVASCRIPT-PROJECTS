@@ -98,7 +98,7 @@ keys.addEventListener('click', (event) => {
     const target = event.target;
     //The target variable is an object that represents the element
     // that was clicked on.
-    if (!target.classList.contains('button')) {
+    if (!target.matches('button')) {
         return;
 
     }   
