@@ -54,7 +54,7 @@ function Handle_Operator(Next_Operator) {
         //If an operator exists, property the calculation in the Perform_Calculation object
         // and then set the result equal to the Calculator's Display_Value property.
         //operator is executed.
-        let result = Perform_Calculation[operator]();(Value_Now, Value_of_Input);
+        let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         //Here we add a fixed amount of numbers after the decimal.
         Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
