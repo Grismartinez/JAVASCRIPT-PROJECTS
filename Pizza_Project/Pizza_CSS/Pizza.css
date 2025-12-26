@@ -1,0 +1,94 @@
+body {
+    background-color: darkblue;
+  }
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    color: white;
+  
+  
+
+}
+h3 {
+    font-family: 'Arial';
+    color: snow;
+
+  
+
+}
+div {
+    color:lightyellow;
+    font-family: monospace;
+  
+
+}
+#menuBG {
+    width:400px;
+    height:470px;   
+    margin:10px auto;
+ 
+  
+
+}
+
+#frmMenu {
+    width:400px;
+    height:200px;
+    margin:0px auto;
+  
+
+    
+}
+
+#totalPrice {
+    width:200px;
+    height:19px;
+    margin:0 auto;
+    float:right;
+
+}
+
+.left {
+    width:200px;
+    height:200px;
+    float:left;
+   
+
+}
+.right {
+    width:200px;
+    height:200px;
+    float:right;
+
+}
+.center
+    {
+    width:200px;
+    height:200px;
+    float:left;   
+
+}
+#showText {
+    width:200px;
+    height:190px;
+    margin:0px auto;
+    float:left;
+  
+  
+
+} 
+
+#cart {
+    top:0; margin: 0px auto;
+    width:400px;
+    height:200px;
+  
+}
+#btnOrder {
+    height:40px;
+    margin:10px 0px 0px 100px;
+    width:100px;
+    display:block;
+    margin:25px auto;
+
+} 
