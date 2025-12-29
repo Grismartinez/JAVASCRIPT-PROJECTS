@@ -35,7 +35,8 @@ body{
 Font-family: verdana;
 font-size:small;
 font-weight: 700;
-color:blue
+color:blue;
+}
 
 /*HEADER*/
 h1{
@@ -46,7 +47,7 @@ h1{
     margin-right: auto;
 }
 
-}
+/*ABOUT SECTION*/
 
 #about-main-text{
     text-align: justify;

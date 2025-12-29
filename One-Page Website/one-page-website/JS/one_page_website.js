@@ -32,10 +32,6 @@ footer.addEventListener("mouseleave", function () {
     footer.style.backgroundColor = "";
 });
 
-// PAGE LOAD CONFIRMATION
-window.onload = function () {
-    console.log("Travel website loaded with Lightbox!");
-};
 
 /* LIGHTBOX FUNCTIONALITY */
 let lightbox = document.getElementById("lightbox");
