@@ -33,6 +33,18 @@ body{
     border-bottom: 5px solid rgb(98, 0, 0);
     height: 100px;
 }
+
+/*SHRINK NAVBAR ON SCROLL*/
+.nav-shrink{
+    height: 70px;
+    transition: height 0.5s ease;
+}
+
+/*adds a transition to the movie drop down menu*/
+.navbar-collapse{
+    transition: margin-top  0.5s ease;
+}
+
 /*Affects the title in the nevbar Academy Cinemas*/
 .navbar-brand{
     color: var(--main-color-accent);
